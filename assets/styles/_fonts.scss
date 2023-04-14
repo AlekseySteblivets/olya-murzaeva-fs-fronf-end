@@ -1,0 +1,136 @@
+@import "_sizes";
+
+@mixin font-main {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+@mixin font-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+@mixin font-footer {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@mixin font-name-of-works {
+  font-size: 36px;
+}
+
+@mixin font-small {
+  font-size: 20px;
+}
+
+@mixin font-footer-nav {
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+@mixin font-footer-nav-big {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+//----------------------------------------------font Delius---------------------------------------------//
+@mixin font-delius-bigest {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 32px;
+}
+
+@mixin font-delius-big {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 24px;
+}
+
+@mixin font-delius {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 20px;
+}
+
+@mixin font-delius-small {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 16px;
+}
+
+@mixin font-delius-smaller {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 15px;
+}
+
+//----------------------------------------------font Signika---------------------------------------------//
+@mixin font-signika {
+  font-family: "Signika";
+  font-size: 15px;
+  line-height: 1.23;
+}
+
+//----------------------------------------------font "Source Serif Pro"---------------------------------------------//
+
+@mixin font-sourse-serif-big {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-size: 40px;
+}
+@mixin font-sourse-serif-list-portfolio {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 36px;
+}
+
+@mixin font-sourse-serif-word-films {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 40px;
+}
+
+@mixin font-sourse-serif-word-price {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@mixin font-hero-title {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+//==========================================inter========================================
+@mixin font-inter-title-about-me {
+  font-family: "Inter";
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+@mixin font-inter-text-about-me {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 1.39;
+}
+
+@mixin font-inter-smaler {
+  font-family: "Inter";
+  font-size: 11px;
+  line-height: 1.21;
+}
+
+@mixin font-inter-small {
+  font-family: "Inter";
+  font-size: 13px;
+  line-height: 1.21;
+}
+
+@mixin font-inter-ordinary {
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 1.21;
+}

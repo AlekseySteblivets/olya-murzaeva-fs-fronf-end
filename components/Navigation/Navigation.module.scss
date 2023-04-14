@@ -1,0 +1,50 @@
+@import "../../assets/styles/media";
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  @include media-tablet {
+    font-size: 24px;
+  }
+}
+
+// .nav {
+//   padding-top: 150px;
+//   @include media-tablet {
+//     text-align: start;
+//     padding-top: 190px;
+//   }
+//   @include media-desktop {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-top: 130px;
+//   }
+// }
+
+// .item {
+//   margin-bottom: 50px;
+// }
+
+// .menu2 {
+//   @include media-desktop {
+//     margin-right: 360px;
+//   }
+// }
+
+// .menu4 {
+//   @include media-desktop {
+//     text-align: end;
+//   }
+// }
+
+// .menu4 .item {
+//   &:last-child {
+//     margin-bottom: 0;
+//   }
+// }

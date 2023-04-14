@@ -1,0 +1,83 @@
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/media";
+
+.block {
+  padding-top: 33px;
+  padding-bottom: 80px;
+}
+
+.item img {
+  width: 100%;
+  // @include media-tablet {
+  //   width: 205px;
+  // }
+}
+
+.item {
+  @include media-tablet {
+    padding: 8px;
+    min-width: 205px;
+  }
+}
+
+.title {
+  font-weight: 24;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.titleMenu {
+  @include font-delius;
+  margin-bottom: 16px;
+}
+
+.itemTitle {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.text {
+  text-align: start;
+  margin-top: 24px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+// .button {
+//   position: relative;
+//   @include font-signika;
+//   border: none;
+//   margin-bottom: 48px;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     bottom: 0px;
+//     left: -6px;
+//     width: 120%;
+//     border: 1px solid $color-black;
+//   }
+// }
+
+.textFinal {
+  text-align: start;
+  font-size: 20px;
+}
+
+.menu {
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.blockOtherPhotos {
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.blockWedding {
+  padding-bottom: 20px;
+}

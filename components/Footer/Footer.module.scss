@@ -1,0 +1,40 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+// @import "../../assets/styles/media";
+
+@import "../../assets/styles/media";
+
+.block {
+  // background-color: $color-grey;
+  color: $color-black;
+  // padding-top: 20px;
+  // padding-bottom: 12px;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 25px;
+  text-align: center;
+  @include font-delius;
+
+  @include media-tablet {
+    @include font-main;
+  }
+  @include media-desktop {
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 104px;
+    border: 1px solid $color-black;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    @include media-tablet {
+      width: 358px;
+    }
+  }
+}

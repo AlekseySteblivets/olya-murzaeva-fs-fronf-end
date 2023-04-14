@@ -1,0 +1,77 @@
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/media";
+
+.block {
+  padding-bottom: 40px;
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include media-desktop {
+    padding-bottom: 80px;
+  }
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  @include font-inter-title-about-me;
+  @include media-desktop {
+    padding-top: 110px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 110px;
+    display: block;
+    width: 100%;
+    border: 1px solid #000000;
+  }
+}
+
+.text {
+  @include font-inter-text-about-me;
+}
+
+.textFinPart {
+  margin-top: 35px;
+  @include font-inter-text-about-me;
+}
+
+.fotoAuthor {
+  background-image: url("../../public/img/about-me360.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  height: 470px;
+
+  @include media-i-phone {
+    background-image: url("../../public/img/about-me414.jpg");
+  }
+
+  @include media-tablet {
+    background-image: url("../../public/img/about-me768.jpg");
+    margin-top: 41px;
+    margin-left: 30px;
+    width: 50%;
+    height: inherit;
+  }
+
+  @include media-desktop {
+    background-image: url("../../public/img/about-me1024.jpg");
+    width: 40%;
+    margin-top: 55px;
+  }
+}
+
+.infoAboutAuthor {
+  display: flex;
+  flex-direction: column;
+  @include media-tablet {
+    width: 50%;
+  }
+}

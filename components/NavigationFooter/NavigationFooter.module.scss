@@ -1,0 +1,41 @@
+@import "../../assets/styles/sizes";
+@import "../../assets/styles/media";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+
+.navFooter {
+  // outline: 1px solid green;
+  // margin: 0 auto;
+  padding-left: $size8;
+  padding-right: $size8;
+  // width: 100%;
+  // max-width: 413px;
+
+  @include media-i-phone {
+    //   max-width: 767px;
+    padding-left: $size8;
+    padding-right: $size8;
+  }
+  @include media-tablet {
+    //   max-width: 1023px;
+    padding-left: $size13;
+    padding-right: $size13;
+  }
+  @include media-desktop {
+    //   max-width: 100vw;
+    padding-left: $size10;
+    padding-right: $size10;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  @include font-footer-nav;
+  @include media-tablet {
+    @include font-footer-nav-big;
+  }
+}
