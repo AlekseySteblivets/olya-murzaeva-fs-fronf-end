@@ -15,8 +15,7 @@ export default function NavigationFooter() {
 
   useEffect(() => {
     router.push("/");
-    // clearPathMethod();
-    setPathNameIsHome(true);
+    // setPathNameIsHome(true);
   }, [pathNameIsHome]);
 
   const clearPathMethod = () =>

@@ -6,16 +6,16 @@ import LayoutSection from "../../views/LayoutSection";
 
 import styles from "../../styles/PortpholioList.module.scss";
 
-export default function Wedding() {
+export default function Couples() {
   return (
     <>
       <Head>
-        <title>Portpholio wedding</title>
+        <title> Portpholio couples</title>
       </Head>
 
-      <LayoutSection id="wedding" classNameProps={styles.portpholioList}>
+      <LayoutSection id="couples" classNameProps={styles.portpholioList}>
         <Container>
-          <PortpholioItem namePortpholio="wedding" />
+          <PortpholioItem namePortpholio="couples" />
         </Container>
       </LayoutSection>
     </>
