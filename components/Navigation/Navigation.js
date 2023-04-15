@@ -1,8 +1,7 @@
-// import { useState } from "react";
-// import { Link } from "react-router-dom";
-// import Select from "../../lib/Select";
-
+import { useState } from "react";
 import Link from "next/link";
+
+import Select from "../../lib/Select";
 
 import { portpholioList } from "../../utils/portpholioList";
 import { navigationList } from "../../utils/navigationList";
@@ -10,21 +9,42 @@ import { navigationList } from "../../utils/navigationList";
 import styles from "./Navigation.module.scss";
 
 export default function Navigation() {
-  // const [portpholioEl, setportpholioEl] = useState("portfolio");
+  const [portpholioEl, setportpholioEl] = useState("portpholio");
 
-  // const passPortpholioEl = (selectedEl) => {
-  //   setportpholioEl(selectedEl);
-  // };
+  const passPortpholioEl = (selectedEl) => {
+    setportpholioEl(selectedEl);
+  };
 
   console.log("navigationList", navigationList);
   return (
     <nav className={styles.nav}>
       <ul className={styles.menu}>
-        {navigationList.map(({ id, title, path }) => (
-          <li className={styles.item} key={id}>
-            <Link href={path}>{title}</Link>
-          </li>
-        ))}
+        {navigationList.map(({ id, title, path }) => {
+          if (title === "home") {
+            return (
+              <li key={id} className={styles.item}>
+                <a href={path}>{title}</a>
+              </li>
+            );
+          }
+          if (title === "portpholio") {
+            return (
+              <li key={id} className={styles.item}>
+                <Select
+                  arrData={portpholioList}
+                  currData={portpholioEl}
+                  passNumberMonthOrYear={passPortpholioEl}
+                />
+              </li>
+            );
+          } else {
+            return (
+              <li className={styles.item} key={id}>
+                <Link href={path}>{title}</Link>
+              </li>
+            );
+          }
+        })}
       </ul>
     </nav>
   );

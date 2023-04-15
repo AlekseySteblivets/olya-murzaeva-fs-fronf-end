@@ -3,19 +3,18 @@
 @import "../../assets/styles/media";
 
 .textBtn {
-  // width: 280px;
-  // height: 50px;
-  // padding-left: 20px;
-  // text-align: start;
+  font-size: 15px;
+  @include media-tablet {
+    font-size: 24px;
+  }
+
   border: none;
-  // border-color: none;
-  // border-style: inherit;
   background-color: inherit;
   color: $color-white;
-  // border-radius: 30px;
   cursor: pointer;
-
-  // @include font-circe-small;
+  // &:hover {
+  //   cursor: pointer;
+  // }
 
   @include media-tablet {
     width: 160px;
@@ -26,15 +25,8 @@
   }
 }
 
-// .wrapper {
-//   margin-bottom: 20px;
-// }
 .container {
   position: relative;
-}
-
-textBtn:hover {
-  cursor: pointer;
 }
 
 .textBtn::after {
@@ -42,7 +34,7 @@ textBtn:hover {
   position: absolute;
   right: -4px;
   bottom: 5px;
-  background-image: url("../../assets/img/vector-on-select.svg");
+  background-image: url("../../public/img/vector-on-select.svg");
   width: 9px;
   height: 9px;
   background-position: center;
@@ -87,7 +79,6 @@ textBtn:hover {
 
   @include media-desktop {
     left: 38px;
-    // max-height: auto;
   }
 }
 
@@ -108,7 +99,6 @@ textBtn:hover {
 .item:focus,
 .item:hover,
 .item[aria-selected="true"] {
-  // background: $color-grey;
   color: $color-grey;
   cursor: pointer;
 }
