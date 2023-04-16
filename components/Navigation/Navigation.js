@@ -15,7 +15,6 @@ export default function Navigation() {
     setportpholioEl(selectedEl);
   };
 
-  console.log("navigationList", navigationList);
   return (
     <nav className={styles.nav}>
       <ul className={styles.menu}>

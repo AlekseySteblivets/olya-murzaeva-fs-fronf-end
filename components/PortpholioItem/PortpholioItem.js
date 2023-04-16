@@ -6,6 +6,7 @@ export default function PortpholioItem({ namePortpholio }) {
   return (
     <>
       <h2 className={styles.title}>{namePortpholio}</h2>
+
       <ul className={styles.menu}>
         <Cart />
         <Cart />

@@ -12,7 +12,9 @@ export default function Portpholio() {
           {portpholioList.map((namePortpholio) => {
             return (
               <li key={namePortpholio} className={styles.item}>
-                <Link href={namePortpholio}>{namePortpholio}</Link>
+                <Link href={`portpholio/${namePortpholio}`}>
+                  {namePortpholio}
+                </Link>
               </li>
             );
           })}

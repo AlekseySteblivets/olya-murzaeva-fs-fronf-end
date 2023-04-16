@@ -11,7 +11,6 @@ export default function NavigationFooter() {
   const [pathNameIsHome, setPathNameIsHome] = useState(true);
 
   const router = useRouter();
-  console.log("pathNameNavigationFooter", router.pathname);
 
   useEffect(() => {
     router.push("/");
