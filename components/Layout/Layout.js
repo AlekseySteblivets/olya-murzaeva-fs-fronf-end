@@ -1,4 +1,5 @@
 // import { Outlet, useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 
 import Container from "../../components/Container";
 // import Footer from "../../components/Footer/Footer";
@@ -12,7 +13,7 @@ import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 
 export default function Layout({ children }) {
-  // const location = useLocation();
+  const location = useRouter();
 
   return (
     <>
@@ -20,7 +21,7 @@ export default function Layout({ children }) {
         element="header"
         id="header"
         classNameProps={cn(styles.header, {
-          // [styles.headerRoute]: location.pathname !== "/",
+          [styles.headerRoute]: location.pathname !== "/",
         })}
       >
         <Container>
