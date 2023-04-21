@@ -8,15 +8,15 @@ export default function PortpholioItem({ namePortpholio }) {
       <h2 className={styles.title}>{namePortpholio}</h2>
 
       <ul className={styles.menu}>
-        <Cart />
-        <Cart />
-        <Cart />
-        <Cart />
-        <Cart />
-        <Cart />
-        <Cart />
-        <Cart />
-        <Cart />
+        <Cart workNumber="a" />
+        <Cart workNumber="b" />
+        <Cart workNumber="c" />
+        <Cart workNumber="d" />
+        <Cart workNumber="e" />
+        <Cart workNumber="f" />
+        <Cart workNumber="g" />
+        <Cart workNumber="h" />
+        <Cart workNumber="g" />
       </ul>
     </>
   );

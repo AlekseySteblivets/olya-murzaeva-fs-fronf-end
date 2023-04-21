@@ -8,19 +8,18 @@ import { navigationList } from "../../utils/navigationList";
 import styles from "./NavigationFooter.module.scss";
 
 export default function NavigationFooter() {
-  const [pathNameIsHome, setPathNameIsHome] = useState(true);
+  // const [pathNameIsHome, setPathNameIsHome] = useState(true);
 
-  const router = useRouter();
+  // const router = useRouter();
 
-  useEffect(() => {
-    router.push("/");
-    // setPathNameIsHome(true);
-  }, [pathNameIsHome]);
+  // useEffect(() => {
+  //   router.push("/");
+  // }, [pathNameIsHome]);
 
-  const clearPathMethod = () =>
-    router.pathname !== "/"
-      ? setPathNameIsHome(false)
-      : setPathNameIsHome(true);
+  // const clearPathMethod = () =>
+  //   router.pathname !== "/"
+  //     ? setPathNameIsHome(false)
+  //     : setPathNameIsHome(true);
 
   return (
     <nav className={styles.navFooter}>
@@ -30,8 +29,8 @@ export default function NavigationFooter() {
             return (
               <li key={id} className={styles.item}>
                 <a
-                  onClick={() => clearPathMethod()}
-                  // href={clearPathMethod()}
+                  // onClick={() => clearPathMethod()}
+
                   href="#portpholio"
                 >
                   {title}

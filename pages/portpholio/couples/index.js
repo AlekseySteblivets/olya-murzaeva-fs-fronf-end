@@ -1,10 +1,10 @@
 import Head from "next/head";
 
-import PortpholioItem from "../../components/PortpholioItem";
-import Container from "../../components/Container";
-import LayoutSection from "../../views/LayoutSection";
+import PortpholioItem from "../../../components/PortpholioItem";
+import Container from "../../../components/Container";
+import LayoutSection from "../../../views/LayoutSection";
 
-import styles from "../../styles/PortpholioList.module.scss";
+import styles from "../../../styles/PortpholioList.module.scss";
 
 export default function Couples() {
   return (
