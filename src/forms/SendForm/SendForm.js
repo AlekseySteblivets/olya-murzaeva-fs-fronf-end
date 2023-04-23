@@ -16,7 +16,7 @@ export default function SendForm() {
     alert(JSON.stringify(data));
     reset();
   };
-
+  console.log("errors", errors);
   return (
     <div className={styles.blockForm}>
       <h3 className={styles.title}>Write to me</h3>
@@ -52,7 +52,7 @@ export default function SendForm() {
           })}
         />
         <div className={styles.blockError}>
-          {errors?.name && (
+          {errors?.email && (
             <p className={styles.textError}>
               {errors?.email?.message || "Error!"}
             </p>
@@ -70,7 +70,7 @@ export default function SendForm() {
           })}
         />
         <div className={styles.blockError}>
-          {errors?.name && (
+          {errors?.text && (
             <p className={styles.textareaError}>
               {errors?.text?.message || "Error!"}
             </p>
