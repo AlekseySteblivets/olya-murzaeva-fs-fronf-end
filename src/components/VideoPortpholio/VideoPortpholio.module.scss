@@ -1,0 +1,88 @@
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/media";
+
+.blockTitleVideo {
+  text-align: center;
+  padding-top: 28px;
+  @include media-tablet {
+    padding-top: 64px;
+  }
+}
+
+.menu {
+  @include media-tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  @include font-delius;
+  @include media-tablet {
+    @include font-delius-bigest;
+  }
+}
+
+.text {
+  padding-top: 20px;
+  @include font-delius-smaller;
+  margin-bottom: 36px;
+  @include media-tablet {
+    padding-top: 42px;
+    @include font-delius-small;
+  }
+}
+
+.titleVideo {
+  width: 100%;
+}
+
+.item {
+  outline: 1px solid tomato;
+  @include media-tablet {
+    padding: 8px;
+    min-width: 267px;
+  }
+}
+
+.titleBlockPortfolio {
+  text-align: center;
+  @include font-delius;
+  margin-bottom: 26px;
+  @include media-tablet {
+    @include font-delius-bigest;
+  }
+}
+
+// .itemTitle {
+//   margin-bottom: 40px;
+//   @include font-delius-small;
+// }
+
+.blockOfPortfolio {
+  // outline: 1px solid yellow;
+  padding-bottom: 20px;
+}
+
+.textAboutWatchVideo {
+  text-align: center;
+  @include font-delius-smaller;
+  @include media-tablet {
+    @include font-delius-big;
+  }
+}
+
+.linkYouTube {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 41px;
+  height: 25px;
+  padding: 0;
+  border: none;
+  background-image: url("../../../public/img/icons/icon-youtube-svg.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 57px;
+}

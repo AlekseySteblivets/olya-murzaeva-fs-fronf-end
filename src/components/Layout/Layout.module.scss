@@ -1,0 +1,32 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/media";
+
+.header {
+  color: $color-white;
+  // position: absolute;
+  position: fixed;
+  z-index: 2;
+  background-color: $color-grey;
+}
+
+.hero {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.headerRoute {
+  background-image: url("../../../public/img/header/headerBg360.jpg");
+  padding-top: 7px;
+  padding-bottom: 7px;
+  @include media-i-phone {
+    background-image: url("../../../public/img/header/headerBg414.jpg");
+  }
+  @include media-tablet {
+    background-image: url("../../../public/img/header/headerBg768.jpg");
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @include media-desktop {
+    background-image: url("../../../public/img/header/headerBg1024.jpg");
+  }
+}

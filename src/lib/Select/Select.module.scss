@@ -1,0 +1,104 @@
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/media";
+
+.textBtn {
+  font-size: 15px;
+  @include media-tablet {
+    font-size: 24px;
+  }
+
+  border: none;
+  background-color: inherit;
+  color: $color-white;
+  cursor: pointer;
+  // &:hover {
+  //   cursor: pointer;
+  // }
+
+  @include media-tablet {
+    width: 160px;
+  }
+
+  @include media-desktop {
+    width: 182px;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.textBtn::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  bottom: 5px;
+  background-image: url("../../../public/img/vector-on-select.svg");
+  width: 9px;
+  height: 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media-tablet {
+    right: 15px;
+    bottom: 9px;
+    width: 18px;
+    height: 9px;
+  }
+}
+
+.expanded::after {
+  content: "";
+  transform: rotate(180deg);
+}
+
+.options {
+  display: none;
+  z-index: 2;
+  position: absolute;
+
+  background-color: $color-white;
+  left: 0px;
+
+  @include font-delius-smaller;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  color: $color-white;
+  overflow-y: auto;
+  padding: 10px 10px 0 10px;
+
+  @include media-tablet {
+    @include font-delius-big;
+    left: 25px;
+  }
+
+  @include media-desktop {
+    left: 38px;
+  }
+}
+
+.show::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.item {
+  color: $color-black;
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.item:active,
+.item:focus,
+.item:hover,
+.item[aria-selected="true"] {
+  color: $color-grey;
+  cursor: pointer;
+}
