@@ -5,6 +5,7 @@ import AboutMe from "../AboutMe/AboutMe";
 // import SocialMedia from "@/lib/SocialMedia/SocialMedia";
 import ContactData from "../ContactData/ContactData";
 import ItemSocialMedia from "../ItemSocialMedia/ItemSocialMedia";
+import SendForm from "@/src/forms/SendForm/SendForm";
 // import SendForm from "../../forms/SendForm/SendForm";
 // import SendForm from "../../forms/SendForm";
 
@@ -33,7 +34,7 @@ export default function ContactWithMe() {
         </SocialMedia>
         <ContactData />
       </AboutMe>
-      {/* <SendForm /> */}
+      <SendForm />
     </div>
   );
 }
