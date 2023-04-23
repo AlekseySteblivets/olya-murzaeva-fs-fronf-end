@@ -22,7 +22,7 @@ export default function Navigation() {
           if (title === "home") {
             return (
               <li key={id} className={styles.item}>
-                <a href={path}>{title}</a>
+                <Link href={path}>{title}</Link>
               </li>
             );
           }

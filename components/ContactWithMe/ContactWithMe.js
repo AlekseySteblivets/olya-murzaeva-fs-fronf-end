@@ -1,7 +1,9 @@
 // import { useLocation } from "react-router-dom";
 // import { useState, useEffect } from "react";
-
 import AboutMe from "../AboutMe/AboutMe";
+import SocialMedia from "@/lib/SocialMedia/SocialMedia";
+import ContactData from "../ContactData/ContactData";
+import ItemSocialMedia from "../ItemSocialMedia/ItemSocialMedia";
 // import SendForm from "../../forms/SendForm/SendForm";
 // import SendForm from "../../forms/SendForm";
 
@@ -24,7 +26,12 @@ export default function ContactWithMe() {
 
   return (
     <div>
-      <AboutMe pathnameLocationContactIsTrue={true} />
+      <AboutMe pathnameLocationContactIsTrue={true}>
+        <SocialMedia>
+          <ItemSocialMedia />
+        </SocialMedia>
+        <ContactData />
+      </AboutMe>
       {/* <SendForm /> */}
     </div>
   );

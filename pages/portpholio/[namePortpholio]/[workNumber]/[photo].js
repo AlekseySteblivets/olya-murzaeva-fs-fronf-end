@@ -4,24 +4,20 @@ import Image from "next/image";
 import Container from "@/components/Container/Container";
 import LayoutSection from "@/views/LayoutSection/LayoutSection";
 
-import someFoto from "../../../../public/img/hero414.jpg";
+import someFoto from "../../../../public/img/hero768.jpg";
+
+import styles from "../../../../styles/PortpholioList.module.scss";
 
 export default function Photo() {
   return (
     <>
       <Head>
-        <title> Photo couples </title>
+        <title> Photo </title>
       </Head>
 
-      <LayoutSection id="couples">
+      <LayoutSection id="couples" classNameProps={styles.portpholioList}>
         <Container>
-          <Image
-            src={someFoto}
-            width={200}
-            height={200}
-            placeholder="blur"
-            alt="some foto"
-          />
+          <Image src={someFoto} placeholder="blur" alt="some foto" />
         </Container>
       </LayoutSection>
     </>

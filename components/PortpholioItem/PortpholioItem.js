@@ -8,9 +8,9 @@ export default function PortpholioItem({ namePortpholio }) {
       <h2 className={styles.title}>{namePortpholio}</h2>
 
       <ul className={styles.menu}>
-        <Cart workNumber="a" />
-        <Cart workNumber="b" />
-        <Cart workNumber="c" />
+        <Cart workNumber="a" namePortpholio={namePortpholio} />
+        <Cart workNumber="b" namePortpholio={namePortpholio} />
+        <Cart workNumber="c" namePortpholio={namePortpholio} />
         <Cart workNumber="d" />
         <Cart workNumber="e" />
         <Cart workNumber="f" />

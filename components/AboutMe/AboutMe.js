@@ -1,10 +1,6 @@
-import SocialMedia from "../../lib/SocialMedia";
-import ContactData from "../ContactData/ContactData";
-// import cn from "classnames";
-
 import styles from "./AboutMe.module.scss";
 
-export default function AboutMe() {
+export default function AboutMe({ children }) {
   return (
     <div className={styles.block}>
       <div className={styles.infoAboutAuthor}>
@@ -21,11 +17,7 @@ export default function AboutMe() {
         <p className={styles.textFinPart}>
           My works will tell the story of me.
         </p>
-        {/* {children} */}
-        {/* <SocialMedia
-          pathnameLocationContactIsTrue={pathnameLocationContactIsTrue}
-        />
-        {pathnameLocationContactIsTrue && <ContactData />} */}
+        {children}
       </div>
 
       <div className={styles.fotoAuthor}></div>
